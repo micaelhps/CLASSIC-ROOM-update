@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLASSIC ROOM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Cinzel', serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fdf6e3, #e6d3b3); /* bege ao marrom-claro */
+      color: #2c2c2c; /* marrom escuro para texto */
+    }
+
+    header {
+      background-color: #1a1a1a; /* preto */
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    nav button {
+      background: none;
+      border: 1px solid white;
+      color: white;
+      font-size: 1rem;
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    section {
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.8); /* branco translúcido */
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      border-bottom: 2px solid #8b6f47; /* marrom médio */
+      padding-bottom: 0.5rem;
+      color: #3b2f23;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #3b2f23; /* contorno marrom escuro */
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      border-color: black;
+    }
+
+    .video-player {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .track p {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+    }
+
+    iframe {
+      border: 2px solid #8b6f47;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Classic Room Logo" class="logo" />
+    <nav>
+      <button onclick="scrollToSection('compositores')">Compositores</button>
+      <button onclick="scrollToSection('galeria')">Galeria</button>
+      <button onclick="scrollToSection('audios')">Vídeos</button>
+      <button onclick="scrollToSection('sobre')">Sobre</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="compositores">
+      <h2>Grandes Mestres</h2>
+      <ul>
+        <li>Tchaikovsky</li>
+        <li>Vivaldi</li>
+        <li>Paganini</li>
+        <li>Beethoven</li>
+        <li>Mozart</li>
+        <li>Chopin</li>
+      </ul>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Imagens</h2>
+  <div class="galeria-item">
+    <h2>Pyotr Ilyich Tchaikovsky</h2>
+    <img src="c:\Users\anos_iniciais\Desktop\Copilot_20250819_091259.png" alt="Retrato de Tchaikovsky pintado em estilo clássico" class="imagem-galeria">
+    <p class="descricao">
+      Retrato clássico de Tchaikovsky, compositor russo do século XIX, conhecido por obras como <em>O Lago dos Cisnes</em> e <em>Abertura 1812</em>. A imagem retrata sua expressão introspectiva, com trajes formais e fundo em tons terrosos.
+    </p>
+       <img src= "tchaikovsky.png" alt="Retrato de Tchaikovsky"/>
+        <img src="paganini.png" alt="Paganini" />
+        <img src="beethoven.png" alt="Beethoven" />
+        <img src="mozart.png" alt="Mozart" />
+        <img src="chopin.png" alt="Chopin" />
+      </div>
+    </section>
+
+    <section id="audios">
+      <h2>Ouça os Clássicos</h2>
+      <div class="video-player">
+        <div class="track">
+          <p>Tchaikovsky – Swan Lake</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/9cNQFB0TDfY" title="Tchaikovsky - Swan Lake" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="track">
+          <p>Vivaldi – As Quatro Estações</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/WsVcZYw_XRM" title="Vivaldi - As Quatro Estações" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="track">
+          <p>Paganini – Caprice No. 24</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/PZ307sM0t-0" title="Paganini - Caprice No. 24" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="track">
+          <p>Beethoven – Symphony No. 5</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/jv2WJMVPQi8" title="Beethoven - Symphony No. 5" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="track">
+          <p>Mozart – Eine kleine Nachtmusik</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/oy2zDJPIgwc" title="Mozart - Eine kleine Nachtmusik" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="track">
+          <p>Chopin – Nocturne Op. 9 No. 2</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/9E6b3swbnWg" title="Chopin - Nocturne Op. 9 No. 2" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Classic Room é uma homenagem à música clássica e seus grandes compositores. Explore, ouça e inspire-se com obras que atravessam séculos e continuam encantando gerações.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Classic Room. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Frederic_Chopin_photo.jpeg/960px-Frederic_Chopin_photo.jpeg
