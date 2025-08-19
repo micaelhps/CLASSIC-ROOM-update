@@ -1,0 +1,129 @@
+/* Fonte clássica */
+body {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fdf6e3, #e6d3b3); /* bege ao marrom-claro */
+  color: #2c2c2c; /* marrom escuro para texto */
+}
+
+/* Cabeçalho elegante */
+header {
+  background-color: #1a1a1a; /* preto */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+}
+
+/* Navegação */
+nav button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+nav button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Seções */
+section {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h2 {
+  border-bottom: 2px solid #8b6f47; /* marrom médio */
+  padding-bottom: 0.5rem;
+  color: #3b2f23;
+}
+
+/* Lista de compositores */
+ul {
+  list-style-type: square;
+  padding-left: 1.5rem;
+}
+
+/* Galeria de imagens */
+.gallery {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.galeria-item {
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.imagem-galeria {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.descricao {
+  font-size: 16px;
+  color: #444;
+  margin-top: 15px;;
+}
+
+.gallery img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #3b2f23; /* contorno marrom escuro */
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: black;
+}
+
+/* Vídeos */
+.video-player {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.track p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+iframe {
+  border: 2px solid #8b6f47;
+  border-radius: 6px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
